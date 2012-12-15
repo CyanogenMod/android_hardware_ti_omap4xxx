@@ -1,1 +1,3 @@
-include $(all-subdir-makefiles)
+ifneq ($(ENHANCED_DOMX), true)
+    include $(all-subdir-makefiles)
+endif
