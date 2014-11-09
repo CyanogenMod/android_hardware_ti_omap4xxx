@@ -1086,7 +1086,7 @@ int startPreview() {
         params.setPictureSize(captureSize[captureSizeIDX].width, captureSize[captureSizeIDX].height);
 
         camera->setParameters(params.flatten());
-        camera->setPreviewTexture(previewSurface->getIGraphicBufferProducer());
+        camera->setPreviewTarget(previewSurface->getIGraphicBufferProducer());
 
         if(!hardwareActive) prevcnt = 0;
 
